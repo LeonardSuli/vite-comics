@@ -1,6 +1,53 @@
 <script>
 export default{
-  name: 'AppHeader'
+  name: 'AppHeader',
+  data(){
+    return{
+      menu: [
+        {
+          href: '#',
+          text: 'CHARACTERS'
+        },
+        {
+          href: '#',
+          text: 'COMICS',
+          class: 'active'
+        },
+        {
+          href: '#',
+          text: 'MOVIES'
+        },
+        {
+          href: '#',
+          text: 'TV'
+        },
+        {
+          href: '#',
+          text: 'GAMES'
+        },
+        {
+          href: '#',
+          text: 'COLLECTIBLES'
+        },
+        {
+          href: '#',
+          text: 'VIDEOS'
+        },
+        {
+          href: '#',
+          text: 'FANS'
+        },
+        {
+          href: '#',
+          text: 'NEWS'
+        },
+        {
+          href: '#',
+          text: 'SHOP'
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -13,20 +60,16 @@ export default{
       <div class="logo">
         <img src="/img/dc-logo.png">
       </div>
-  
+
       <nav>
+        
+        <!-- Menu dinamico -->
         <ul class="main_menu">
-          <li><a href="#">CHARACTERS</a></li>
-          <li><a href="#" class="active">COMICS</a></li>
-          <li><a href="#">MOVIES</a></li>
-          <li><a href="#">TV</a></li>
-          <li><a href="#">GAMES</a></li>
-          <li><a href="#">COLLECTIBLES</a></li>
-          <li><a href="#">VIDEOS</a></li>
-          <li><a href="#">FANS</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">SHOP</a></li>
+          <li v-for="menu in menu">
+            <a :href="menu.href" :class="menu.class">{{ menu.text }}</a>
+          </li>
         </ul>
+
       </nav>
 
     </div>
