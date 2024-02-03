@@ -37,10 +37,6 @@ export default{
 
 <style scoped>
 
-header{
-
-}
-
 .container{
   display: flex;
   justify-content: space-between;
@@ -64,6 +60,7 @@ header{
   font-size: 10px;
   font-weight: 700;
 }
+
 .main_menu a.active{
   border-bottom: 5px solid var(--dc-primary);
   color: var(--dc-primary);
