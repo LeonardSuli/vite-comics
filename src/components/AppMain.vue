@@ -83,7 +83,7 @@ export default{
 }
 
 .card img{
-  width: 30px;
+  width: 35px;
 }
 
 .card span{

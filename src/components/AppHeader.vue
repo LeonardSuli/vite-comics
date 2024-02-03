@@ -49,12 +49,10 @@ export default{
 }
 
 .main_menu{
-  list-style: none;
   display: flex;
 }
 
 .main_menu a{
-  text-decoration: none;
   padding: 2.15rem 0.75rem;
   color: var(--dc-secondary);
   font-size: 10px;
