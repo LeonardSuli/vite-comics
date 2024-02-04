@@ -130,7 +130,7 @@ footer{
 
 .footer_top li a{
   color: var(--dc-gray);
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .footer_bottom{
