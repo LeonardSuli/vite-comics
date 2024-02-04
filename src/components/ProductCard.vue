@@ -36,7 +36,11 @@ export default{
 
 .card:hover{
   transform: scale(1.1);
-  box-shadow: 0 0 20px var(--dc-gray);
-
 }
+
+.card img:hover{
+  box-shadow: 0 0 20px var(--dc-gray);
+  
+}
+
 </style>
