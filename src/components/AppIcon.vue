@@ -66,11 +66,16 @@ export default{
 
 .icon img{
   width: 35px;
+  transition: all 0.25s;
 }
 
 .icon span{
   padding-left: 1rem;
   font-size: 10px;
+}
+
+.icon:hover img{
+  transform: scale(1.5);
 }
 
 </style>

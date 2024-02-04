@@ -133,6 +133,14 @@ footer{
   font-size: 9px;
 }
 
+.footer_top li:hover{
+  transform: scale(1.1);
+}
+
+.footer_top li:hover a{
+  color: var(--dc-light);
+}
+
 .footer_bottom{
   background-color: var(--dc-secondary);
 }
@@ -148,6 +156,11 @@ footer{
   background-color: var(--dc-secondary);
   padding: 0.75rem;
   margin: 1.5rem 0;
+  transition: all 0.5s;
+}
+
+.sign_up:hover{
+  background-color: var(--dc-primary);
 }
 
 .social{
@@ -163,6 +176,11 @@ footer{
 
 .social img{
   width: 30px;
+}
+
+.social img:hover{
+  filter: brightness(3);
+  transform: scale(1.2);
 }
 
 </style>

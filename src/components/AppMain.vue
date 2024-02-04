@@ -165,11 +165,18 @@ export default{
 .load{
   color: var(--dc-light);
   background-color: var(--dc-primary);
-  padding: 0.5rem 3rem;
+  padding: 0.6rem 3rem;
   border: none;
   font-weight: 600;
+  font-size: 10px;
   margin: auto;
   display: block;
+  transition: all 0.5s;
+}
+
+.load:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 10px var(--dc-primary);
 }
 
 </style>

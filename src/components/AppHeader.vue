@@ -100,6 +100,12 @@ export default{
   color: var(--dc-secondary);
   font-size: 10px;
   font-weight: 700;
+  transition: all;
+}
+
+.main_menu a:hover{
+  border-bottom: 5px solid var(--dc-primary);
+  color: var(--dc-primary);
 }
 
 .main_menu a.active{

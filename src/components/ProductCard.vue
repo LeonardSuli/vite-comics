@@ -33,4 +33,10 @@ export default{
 .card span{
   font-size: 12px;
 }
+
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--dc-gray);
+
+}
 </style>
